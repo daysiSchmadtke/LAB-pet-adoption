@@ -273,19 +273,6 @@ const pets = [
 ];
 const adoptPets = document.querySelector("#adoptPets");
 let availablePets = '<div class="container"><div class="row">';
-// for (const pet of pets) {
-//   availablePets += `<div class="card" style="width: 18rem;">
-//   <h5 class="card-title">${pet.name}</h5>
-//   <h6>${pet.id}</h6>
-//   <img src="${pet.imageUrl}" class="card-img-top" alt="...">
-//   <div class="card-body">
-//     <p class="card-text">${pet.color}</p>
-//     <p class="card-text">${pet.specialSkill}</p>
-//     <p class="card-text">${pet.type}</p>
-//   </div>
-// </div>`;
-// }
-
 adoptPets.innerHTML = availablePets;
 
 let showCats = document.querySelector("#cat-btn");
@@ -296,7 +283,7 @@ function getCat() {
   animal.classList.remove("hide");
   for (const pet of pets) {
     if (pet.type === "cat") {
-      availablePets += `<div class="card" style="width: 15rem;">
+      availablePets += `<div class="card" style="width:15rem;">
       <h5 class="card-title">${pet.name}</h5>
       <h6>${pet.id}</h6>
       <img src="${pet.imageUrl}" class="card-img-top" alt="...">
@@ -304,7 +291,7 @@ function getCat() {
         <p class="card-text">${pet.color}</p>
         <p class="card-text">${pet.specialSkill}</p>
       </div>
-      <footer><p class="card-text" id="cat-type">${pet.type}</p></footer>
+      <div class ="card-body"><footer id="cat-type"><p class="card-text">${pet.type}</p></footer></div>
     </div>`;
       adoptPets.innerHTML = availablePets;
     }

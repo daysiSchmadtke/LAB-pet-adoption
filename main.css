@@ -1,8 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  padding: 2%;
+  margin: 2%;
 }
 
 .container {
@@ -10,6 +17,10 @@ body {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
+  box-sizing: border-box;
+  padding: 1.5%;
+  gap: 20px;
+  align-items: center;
 }
 
 .hide {
@@ -22,5 +33,4 @@ body {
   text-align: center;
   width: 100%;
   box-sizing: border-box;
-  margin: 0px;
 }
