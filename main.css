@@ -2,25 +2,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
+  padding: 20px;
+}
+
+.open-sans-gfont {
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-evenly;
+  padding: 2%;
 }
 
-.hide {
-  display: none;
+.blue-ft {
+  background-color: #addde6;
+  color: blue;
 }
-
-#cat-type {
-  background-color: #99ccff;
-  color: #1338be;
-  text-align: center;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0px;
+.green-ft {
+  background-color: #90ee90;
+  color: #006400;
+}
+.orange-ft {
+  background-color: #ffdbbb;
+  color: #ff6700;
 }

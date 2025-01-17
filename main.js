@@ -271,32 +271,52 @@ const pets = [
       "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
   },
 ];
+
+//Select the main div where the cards will display
 const adoptPets = document.querySelector("#adoptPets");
 let availablePets = '<div class="container"><div class="row">';
-// for (const pet of pets) {
-//   availablePets += `<div class="card" style="width: 18rem;">
-//   <h5 class="card-title">${pet.name}</h5>
-//   <h6>${pet.id}</h6>
-//   <img src="${pet.imageUrl}" class="card-img-top" alt="...">
-//   <div class="card-body">
-//     <p class="card-text">${pet.color}</p>
-//     <p class="card-text">${pet.specialSkill}</p>
-//     <p class="card-text">${pet.type}</p>
-//   </div>
-// </div>`;
-// }
+let petChoice = "";
 
-adoptPets.innerHTML = availablePets;
+//Select the page buttons and add an Event Listener
+const catBtn = document.querySelector("#cat-btn");
+catBtn.addEventListener("click", showCats);
 
-let showCats = document.querySelector("#cat-btn");
-showCats.addEventListener("click", getCat);
+const dogBtn = document.querySelector("#dog-btn");
+dogBtn.addEventListener("click", showDogs);
 
-function getCat() {
-  clearAll();
-  animal.classList.remove("hide");
+const dinoBtn = document.querySelector("#dino-btn");
+dinoBtn.addEventListener("click", showDinos);
+
+const allBtn = document.querySelector("#all-btn");
+allBtn.addEventListener("click", allPets);
+
+// let colorChange = document.querySelector("#change-color");
+
+//Create functions for the categories
+function showCats() {
+  petChoice = "cat";
+  checkPet();
+  // colorChange();
+}
+
+function showDogs() {
+  petChoice = "dog";
+  checkPet();
+}
+
+function showDinos() {
+  petChoice = "dino";
+  checkPet();
+}
+
+function allPets() {
+  createCard();
+}
+
+//function that creates a card
+function createCard() {
   for (const pet of pets) {
-    if (pet.type === "cat") {
-      availablePets += `<div class="card" style="width: 15rem;">
+    availablePets += `<div class="card" style="width: 15rem;">
       <h5 class="card-title">${pet.name}</h5>
       <h6>${pet.id}</h6>
       <img src="${pet.imageUrl}" class="card-img-top" alt="...">
@@ -304,16 +324,41 @@ function getCat() {
         <p class="card-text">${pet.color}</p>
         <p class="card-text">${pet.specialSkill}</p>
       </div>
-      <footer><p class="card-text" id="cat-type">${pet.type}</p></footer>
-    </div>`;
+      <div class="card-footer" id="change-color"><p class="card-text" id="cat-type">${pet.type}</p></div>    </div>`;
+    adoptPets.innerHTML = availablePets;
+  }
+}
+
+//function that compares the pet choice to filter the results
+function checkPet() {
+  for (const pet of pets) {
+    if (petChoice === pet.type) {
+      availablePets += `<div class="card" style="width: 15rem;">
+        <h5 class="card-title">${pet.name}</h5>
+        <h6>${pet.id}</h6>
+        <img src="${pet.imageUrl}" class="card-img-top" alt="...">
+        <div class="card-body"> 
+          <p class="card-text">${pet.color}</p>
+          <p class="card-text">${pet.specialSkill}</p>
+        </div>
+        <div class="card-footer" id="change-color"><p class="card-text" id="cat-type">${pet.type}</p></div>
+      </div>`;
       adoptPets.innerHTML = availablePets;
     }
   }
 }
 
-const clear = document.querySelector("#clear");
-const animal = document.querySelector("#animals");
-clear.addEventListener("click", clearAll);
-function clearAll() {
-  animal.classList.add("hide");
-}
+//color change
+// function colorChange(){
+//   if (petChoice ==="cat"){
+//     colorChange.classList.add(".blue-ft");
+//   }
+//   if else (petChoice ==="dog"){
+//     colorChange.classList.add(".green-ft");
+//   }
+//   if (petChoice ==="orange"){
+//     colorChange.classList.add(".orange-ft");
+//   }
+// }
+
+//function to clear previous info
