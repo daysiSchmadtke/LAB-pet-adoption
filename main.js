@@ -281,7 +281,7 @@ let availablePets = '<div class="container"><div class="row">';
 //   <div class="card-body">
 //     <p class="card-text">${pet.color}</p>
 //     <p class="card-text">${pet.specialSkill}</p>
-//     <p class="card-text">${pet.typeOfPet}</p>
+//     <p class="card-text">${pet.type}</p>
 //   </div>
 // </div>`;
 // }
@@ -296,15 +296,15 @@ function getCat() {
   animal.classList.remove("hide");
   for (const pet of pets) {
     if (pet.type === "cat") {
-      availablePets += `<div class="card" style="width: 18rem;">
+      availablePets += `<div class="card" style="width: 15rem;">
       <h5 class="card-title">${pet.name}</h5>
       <h6>${pet.id}</h6>
       <img src="${pet.imageUrl}" class="card-img-top" alt="...">
       <div class="card-body"> 
         <p class="card-text">${pet.color}</p>
         <p class="card-text">${pet.specialSkill}</p>
-        <p class="card-text">${pet.typeOfPet}</p>
       </div>
+      <footer><p class="card-text" id="cat-type">${pet.type}</p></footer>
     </div>`;
       adoptPets.innerHTML = availablePets;
     }
