@@ -271,7 +271,6 @@ const pets = [
       "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
   },
 ];
-
 //Select the main div where the cards will display
 const adoptPets = document.querySelector("#adoptPets");
 let availablePets = '<div class="container"><div class="row">';
