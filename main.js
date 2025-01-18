@@ -15,7 +15,8 @@ const pets = [
     specialSkill:
       "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
-    imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+    imageUrl:
+      "https://www.dropbox.com/scl/fi/f12hpve32j3f8cwzag6ez/3.png?rlkey=u527wuf86p95ta0z2y789yxvv&st=wjmxq1gg&raw=1",
   },
   {
     id: 3,
@@ -69,7 +70,7 @@ const pets = [
     specialSkill: "Comfortable in the outdoors for up to eight hours.",
     type: "dino",
     imageUrl:
-      "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg",
+      "https://www.dropbox.com/scl/fi/d9dk2x16ms27srw84rxqm/6.png?rlkey=68z1lgje49edmkrtayiawbjbg&st=aukaa5ut&raw=1",
   },
   {
     id: 9,
@@ -91,12 +92,12 @@ const pets = [
   },
   {
     id: 11,
-    name: "Coco",
+    name: "Cocomelon",
     color: "Orange",
     specialSkill: "Can be around food without staring creepily at it.",
     type: "dino",
     imageUrl:
-      "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600",
+      "https://www.dropbox.com/scl/fi/i1ulttmbrfykowdms0psl/2.png?rlkey=ro36udk0ij3ech8gpk6u351uq&st=hxafogof&raw=1",
   },
   {
     id: 12,
@@ -114,8 +115,7 @@ const pets = [
     specialSkill:
       "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
     type: "dog",
-    imageUrl:
-      "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg",
+    imageUrl: "https://m.media-amazon.com/images/I/81gwYMceAqL.jpg",
   },
   {
     id: 14,
@@ -133,7 +133,7 @@ const pets = [
     specialSkill: "Burps minimally.",
     type: "cat",
     imageUrl:
-      "http://cathumor.net/wp-content/uploads/2013/12/cat-humor-funny-karate-cat-2.jpg",
+      "https://media.istockphoto.com/id/1402684700/photo/bengal-cat-with-cucumbers-in-front-of-his-eyes-in-the-spa.jpg?s=612x612&w=0&k=20&c=w6o8WEhSA2koGVCJaF6q3dJki4H7wwJGqKuDTT7frVU=",
   },
   {
     id: 16,
@@ -142,7 +142,7 @@ const pets = [
     specialSkill: "Drives at a safe rate of speed in snow or rain.",
     type: "dino",
     imageUrl:
-      "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg",
+      "https://www.dropbox.com/scl/fi/f12hpve32j3f8cwzag6ez/3.png?rlkey=u527wuf86p95ta0z2y789yxvv&st=wjmxq1gg&raw=1",
   },
   {
     id: 17,
@@ -151,7 +151,8 @@ const pets = [
     specialSkill:
       "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
     type: "cat",
-    imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg",
+    imageUrl:
+      "https://media.istockphoto.com/id/1322123064/photo/portrait-of-an-adorable-white-cat-in-sunglasses-and-an-shirt-lies-on-a-fabric-hammock.jpg?s=612x612&w=0&k=20&c=-G6l2c4jNI0y4cenh-t3qxvIQzVCOqOYZNvrRA7ZU5o=",
   },
   {
     id: 18,
@@ -160,7 +161,7 @@ const pets = [
     specialSkill: "Proficient in air guitar",
     type: "dino",
     imageUrl:
-      "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg",
+      "https://www.dropbox.com/scl/fi/y0tzmkiv0wimw1lng9nko/4.png?rlkey=vwbj5z0dovljdwtt9k1ac4yzb&st=nym28ude&raw=1",
   },
   {
     id: 19,
@@ -169,15 +170,16 @@ const pets = [
     specialSkill: "Listens attentively to boring stories.",
     type: "dog",
     imageUrl:
-      "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg",
+      "https://imageio.forbes.com/specials-images/imageserve/6728cb0298bfe7c30204c436/A-funny-looking-dog-running-on-shallow-water-/0x0.jpg?crop=3171,2549,x408,y13,safe&height=571&width=711&fit=bounds",
   },
   {
     id: 20,
-    name: "Spooky",
+    name: "Bellatrix",
     color: "Black",
     specialSkill: "Uses litter box at appropriate hours.",
     type: "cat",
-    imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg",
+    imageUrl:
+      "https://greatergood.org/hs-fs/hubfs/Murphy-Intake-10-28-2017-CSHS-2.jpg?width=800&height=533&name=Murphy-Intake-10-28-2017-CSHS-2.jpg",
   },
   {
     id: 21,
@@ -186,7 +188,7 @@ const pets = [
     specialSkill: "Owns a Nintendo Power Glove.",
     type: "dino",
     imageUrl:
-      "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715",
+      "https://www.dropbox.com/scl/fi/y19dwc5qwjcfh5r4kemly/5.png?rlkey=aeccqyb7t1fvf9fqe2f7nxtco&st=1jt5xx0t&raw=1",
   },
   {
     id: 22,
@@ -195,7 +197,7 @@ const pets = [
     specialSkill: "Is comfortable with jokes about his receding hairline.",
     type: "cat",
     imageUrl:
-      "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg",
+      "https://static01.nyt.com/images/2021/11/23/business/00cutecats-disinfo-promo/00cutecats-disinfo-promo-mediumSquareAt3X.png",
   },
   {
     id: 23,
@@ -214,16 +216,16 @@ const pets = [
       "Participates in karaoke but does not force others to go out to karaoke.",
     type: "dog",
     imageUrl:
-      "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg",
+      "https://img.freepik.com/free-photo/front-view-funny-cute-dog-concept_23-2148786532.jpg",
   },
   {
     id: 25,
-    name: "Salem",
+    name: "Robbin",
     color: "Red",
     specialSkill: "Knows the words to 4 rap songs.",
     type: "cat",
     imageUrl:
-      "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg",
+      "https://img2.chinadaily.com.cn/images/201711/16/5a0d3041a31061a720dc32d9.jpeg",
   },
   {
     id: 26,
@@ -255,11 +257,12 @@ const pets = [
   {
     id: 29,
     name: "Oscar",
-    color: "Green",
+    color: "white",
     specialSkill:
       "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
-    imageUrl: "http://img.izismile.com/img/img2/20090219/cats_02.jpg",
+    imageUrl:
+      "https://www.pd.com.au/wp-content/uploads/2022/07/cute-cats-Perisan-au.jpg.webp",
   },
   {
     id: 30,
@@ -268,7 +271,7 @@ const pets = [
     specialSkill: "Doesn’t get weirded out by the word “moist.”",
     type: "dino",
     imageUrl:
-      "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
+      "https://creator.nightcafe.studio/jobs/se6OdRLRneeol6qQqUB0/se6OdRLRneeol6qQqUB0--1--lovou.jpg",
   },
 ];
 //Select the main div where the cards will display
