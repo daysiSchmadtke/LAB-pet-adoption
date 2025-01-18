@@ -273,49 +273,42 @@ const pets = [
 ];
 //Select the main div where the cards will display
 const adoptPets = document.querySelector("#adoptPets");
-let availablePets = '<div class="container"><div class="row">';
-let petChoice = "";
 
-//Select the page buttons and add an Event Listener
+//Select the page buttons and add an Event Listener & arrow function
+const allBtn = document.querySelector("#all-btn");
+allBtn.addEventListener("click", () => {
+  createCards(pets);
+});
+
 const catBtn = document.querySelector("#cat-btn");
-catBtn.addEventListener("click", showCats);
+catBtn.addEventListener("click", () => {
+  const cats = filterPet(pets, "cat");
+  createCards(cats);
+});
 
 const dogBtn = document.querySelector("#dog-btn");
-dogBtn.addEventListener("click", showDogs);
+dogBtn.addEventListener("click", () => {
+  const dogs = filterPet(pets, "dog");
+  createCards(dogs);
+});
 
 const dinoBtn = document.querySelector("#dino-btn");
-dinoBtn.addEventListener("click", showDinos);
+dinoBtn.addEventListener("click", () => {
+  const dinos = filterPet(pets, "dino");
+  createCards(dinos);
+});
 
-const allBtn = document.querySelector("#all-btn");
-allBtn.addEventListener("click", allPets);
+// create a function that updates the id passing in the html cards;
+const displayCards = (divId, htmlRender) => {
+  const selectDiv = document.querySelector(divId);
+  selectDiv.innerHTML = htmlRender;
+};
 
-// let colorChange = document.querySelector("#change-color");
-
-//Create functions for the categories
-function showCats() {
-  petChoice = "cat";
-  checkPet();
-  // colorChange();
-}
-
-function showDogs() {
-  petChoice = "dog";
-  checkPet();
-}
-
-function showDinos() {
-  petChoice = "dino";
-  checkPet();
-}
-
-function allPets() {
-  createCard();
-}
-
-//function that creates a card
-function createCard() {
-  for (const pet of pets) {
-    availablePets += `<div class="card" style="width: 15rem;">
+//function that creates a card and then calls the function to display each card
+const createCards = (array) => {
+  let cardInfo = "";
+  for (const pet of array) {
+    cardInfo += `<div class="card" style="width: 15rem;">
       <h5 class="card-title">${pet.name}</h5>
       <h6>${pet.id}</h6>
       <img src="${pet.imageUrl}" class="card-img-top" alt="...">
@@ -323,41 +316,21 @@ function createCard() {
         <p class="card-text">${pet.color}</p>
         <p class="card-text">${pet.specialSkill}</p>
       </div>
-      <div class="card-footer" id="change-color"><p class="card-text" id="cat-type">${pet.type}</p></div>    </div>`;
-    adoptPets.innerHTML = availablePets;
-  }
-}
-
-//function that compares the pet choice to filter the results
-function checkPet() {
-  for (const pet of pets) {
-    if (petChoice === pet.type) {
-      availablePets += `<div class="card" style="width: 15rem;">
-        <h5 class="card-title">${pet.name}</h5>
-        <h6>${pet.id}</h6>
-        <img src="${pet.imageUrl}" class="card-img-top" alt="...">
-        <div class="card-body"> 
-          <p class="card-text">${pet.color}</p>
-          <p class="card-text">${pet.specialSkill}</p>
-        </div>
-        <div class="card-footer" id="change-color"><p class="card-text" id="cat-type">${pet.type}</p></div>
+      <div class="card-footer">
+      <p class="card-text">${pet.type}</p>
+      </div>
       </div>`;
-      adoptPets.innerHTML = availablePets;
+  }
+  displayCards("#adoptPets", cardInfo);
+};
+
+//Create a function to filter by pet type
+const filterPet = (array, type) => {
+  const petType = [];
+  for (const pet of array) {
+    if (pet.type === type) {
+      petType.push(pet);
     }
   }
-}
-
-//color change
-// function colorChange(){
-//   if (petChoice ==="cat"){
-//     colorChange.classList.add(".blue-ft");
-//   }
-//   if else (petChoice ==="dog"){
-//     colorChange.classList.add(".green-ft");
-//   }
-//   if (petChoice ==="orange"){
-//     colorChange.classList.add(".orange-ft");
-//   }
-// }
-
-//function to clear previous info
+  return petType;
+};
