@@ -5,6 +5,7 @@ const pets = [
     color: "Green",
     specialSkill: "Gives sincere apologies.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "http://kittentoob.com/wp-content/uploads/2015/06/funny-cat-with-a-towel.jpg",
   },
@@ -15,6 +16,7 @@ const pets = [
     specialSkill:
       "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://www.dropbox.com/scl/fi/f12hpve32j3f8cwzag6ez/3.png?rlkey=u527wuf86p95ta0z2y789yxvv&st=wjmxq1gg&raw=1",
   },
@@ -24,6 +26,7 @@ const pets = [
     color: "Yellow",
     specialSkill: "Can prove he is a real man by drinking whiskey.",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://mydinosaurs.com/wp-content/uploads/2017/02/2-3-600x400.jpg",
   },
@@ -33,6 +36,7 @@ const pets = [
     color: "Black",
     specialSkill: "Burps minimally.",
     type: "dog",
+    className: "green",
     imageUrl:
       "http://cdn.akc.org/content/article-body-image/funny-pembroke_welsh_corgi.jpg",
   },
@@ -42,6 +46,7 @@ const pets = [
     color: "Brown",
     specialSkill: "Comfortable in the outdoors for up to eight hours.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "http://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg",
   },
@@ -51,6 +56,7 @@ const pets = [
     color: "Black",
     specialSkill: "Can read (but cannot understand) Hebrew.",
     type: "dog",
+    className: "green",
     imageUrl:
       "https://upload.wikimedia.org/wikipedia/commons/7/7e/Basset_Hound_600.jpg",
   },
@@ -60,6 +66,7 @@ const pets = [
     color: "Yellow",
     specialSkill: "Able to stop chewing ice or whistling on request.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://i.pinimg.com/originals/9d/da/3e/9dda3e5fd2b9886fc3d13ee47f52e8a0.jpg",
   },
@@ -69,6 +76,7 @@ const pets = [
     color: "Grey",
     specialSkill: "Comfortable in the outdoors for up to eight hours.",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://www.dropbox.com/scl/fi/d9dk2x16ms27srw84rxqm/6.png?rlkey=68z1lgje49edmkrtayiawbjbg&st=aukaa5ut&raw=1",
   },
@@ -78,6 +86,7 @@ const pets = [
     color: "Brown",
     specialSkill: "Adept at talking self and others out of fights.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://tailandfur.com/wp-content/uploads/2015/09/40-Amazing-Cat-Funny-Moment-Pictures-Feature-Image.jpg",
   },
@@ -87,6 +96,7 @@ const pets = [
     color: "Blue",
     specialSkill: "Listens attentively to boring stories.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://i.pinimg.com/originals/04/54/92/0454926d39eeb420f4f01948e94e9e41.jpg",
   },
@@ -95,7 +105,7 @@ const pets = [
     name: "Cocomelon",
     color: "Orange",
     specialSkill: "Can be around food without staring creepily at it.",
-    type: "dino",
+    type: "orange",
     imageUrl:
       "https://www.dropbox.com/scl/fi/i1ulttmbrfykowdms0psl/2.png?rlkey=ro36udk0ij3ech8gpk6u351uq&st=hxafogof&raw=1",
   },
@@ -105,6 +115,7 @@ const pets = [
     color: "Green",
     specialSkill: "Does not use excessive acronyms.",
     type: "dog",
+    className: "green",
     imageUrl:
       "https://i.pinimg.com/originals/1f/30/8c/1f308c9c108a384b91b39430cc7312e9.jpg",
   },
@@ -112,6 +123,7 @@ const pets = [
     id: 13,
     name: "Chester",
     color: "Red",
+    className: "green",
     specialSkill:
       "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
     type: "dog",
@@ -123,6 +135,7 @@ const pets = [
     color: "Brown",
     specialSkill: "Always up for dessert.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "http://3.bp.blogspot.com/-RzIFLsIO-XQ/UFoMLOT66JI/AAAAAAAAVps/JRF98hdA9S8/s640/funny-cat-pictures-016-027.jpg",
   },
@@ -132,6 +145,7 @@ const pets = [
     color: "Red",
     specialSkill: "Burps minimally.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://media.istockphoto.com/id/1402684700/photo/bengal-cat-with-cucumbers-in-front-of-his-eyes-in-the-spa.jpg?s=612x612&w=0&k=20&c=w6o8WEhSA2koGVCJaF6q3dJki4H7wwJGqKuDTT7frVU=",
   },
@@ -141,6 +155,7 @@ const pets = [
     color: "Brown",
     specialSkill: "Drives at a safe rate of speed in snow or rain.",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://www.dropbox.com/scl/fi/f12hpve32j3f8cwzag6ez/3.png?rlkey=u527wuf86p95ta0z2y789yxvv&st=wjmxq1gg&raw=1",
   },
@@ -151,6 +166,7 @@ const pets = [
     specialSkill:
       "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://media.istockphoto.com/id/1322123064/photo/portrait-of-an-adorable-white-cat-in-sunglasses-and-an-shirt-lies-on-a-fabric-hammock.jpg?s=612x612&w=0&k=20&c=-G6l2c4jNI0y4cenh-t3qxvIQzVCOqOYZNvrRA7ZU5o=",
   },
@@ -159,6 +175,7 @@ const pets = [
     name: "Salem",
     color: "Brown",
     specialSkill: "Proficient in air guitar",
+    className: "orange",
     type: "dino",
     imageUrl:
       "https://www.dropbox.com/scl/fi/y0tzmkiv0wimw1lng9nko/4.png?rlkey=vwbj5z0dovljdwtt9k1ac4yzb&st=nym28ude&raw=1",
@@ -167,6 +184,7 @@ const pets = [
     id: 19,
     name: "Callie",
     color: "Blue",
+    className: "green",
     specialSkill: "Listens attentively to boring stories.",
     type: "dog",
     imageUrl:
@@ -178,6 +196,7 @@ const pets = [
     color: "Black",
     specialSkill: "Uses litter box at appropriate hours.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://greatergood.org/hs-fs/hubfs/Murphy-Intake-10-28-2017-CSHS-2.jpg?width=800&height=533&name=Murphy-Intake-10-28-2017-CSHS-2.jpg",
   },
@@ -187,6 +206,7 @@ const pets = [
     color: "Red",
     specialSkill: "Owns a Nintendo Power Glove.",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://www.dropbox.com/scl/fi/y19dwc5qwjcfh5r4kemly/5.png?rlkey=aeccqyb7t1fvf9fqe2f7nxtco&st=1jt5xx0t&raw=1",
   },
@@ -196,6 +216,7 @@ const pets = [
     color: "Orange",
     specialSkill: "Is comfortable with jokes about his receding hairline.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://static01.nyt.com/images/2021/11/23/business/00cutecats-disinfo-promo/00cutecats-disinfo-promo-mediumSquareAt3X.png",
   },
@@ -205,6 +226,7 @@ const pets = [
     color: "Red",
     specialSkill: "Enjoys fine wine.",
     type: "dog",
+    className: "green",
     imageUrl:
       "http://1.bp.blogspot.com/-VjM0CmtN-vU/T7YX-LXa09I/AAAAAAAADA0/Vt1oGWEG0lw/s1600/sheepdog+border+collie+shakes+off+water+funny+picture+photo+pulling+faces+raspberry+tongue.jpg",
   },
@@ -215,6 +237,7 @@ const pets = [
     specialSkill:
       "Participates in karaoke but does not force others to go out to karaoke.",
     type: "dog",
+    className: "green",
     imageUrl:
       "https://img.freepik.com/free-photo/front-view-funny-cute-dog-concept_23-2148786532.jpg",
   },
@@ -224,6 +247,7 @@ const pets = [
     color: "Red",
     specialSkill: "Knows the words to 4 rap songs.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://img2.chinadaily.com.cn/images/201711/16/5a0d3041a31061a720dc32d9.jpeg",
   },
@@ -233,6 +257,7 @@ const pets = [
     color: "Yellow",
     specialSkill: "Cleans himself.",
     type: "dog",
+    className: "green",
     imageUrl:
       "https://www.thetrendywhippet.co.uk/wp-content/uploads/2016/11/IMG_1651-600x400.jpg",
   },
@@ -242,6 +267,7 @@ const pets = [
     color: "Green",
     specialSkill: "Admits he is wrong",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://assets.creationmuseum.org/img/pages/1703-DinoDen-TwoCard.jpg",
   },
@@ -251,6 +277,7 @@ const pets = [
     color: "Purple",
     specialSkill: "Dances when he has to.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://tailandfur.com/wp-content/uploads/2016/03/40-Scary-and-Funny-Cat-Pictures-8.jpg",
   },
@@ -261,6 +288,7 @@ const pets = [
     specialSkill:
       "Gives hugs with appropriate pressure and for the right length of time.",
     type: "cat",
+    className: "blue",
     imageUrl:
       "https://www.pd.com.au/wp-content/uploads/2022/07/cute-cats-Perisan-au.jpg.webp",
   },
@@ -270,6 +298,7 @@ const pets = [
     color: "Red",
     specialSkill: "Doesn’t get weirded out by the word “moist.”",
     type: "dino",
+    className: "orange",
     imageUrl:
       "https://creator.nightcafe.studio/jobs/se6OdRLRneeol6qQqUB0/se6OdRLRneeol6qQqUB0--1--lovou.jpg",
   },
@@ -319,7 +348,7 @@ const createCards = (array) => {
         <p class="card-text">${pet.color}</p>
         <p class="card-text">${pet.specialSkill}</p>
       </div>
-      <div class="card-footer">
+      <div class="card-footer ${pet.className}">
       <p class="card-text">${pet.type}</p>
       </div>
       </div>`;

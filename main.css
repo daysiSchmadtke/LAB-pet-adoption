@@ -32,7 +32,7 @@ body {
   padding: 2%;
 }
 .card {
-  flex: 1 1 20%;
+  flex: 1 1 25%;
   margin: 10px;
   box-sizing: border-box;
   text-align: center;
@@ -60,4 +60,18 @@ body {
   h1 {
     color: #20bc71;
   }
+}
+
+.card-footer.blue {
+  background-color: #add8e6;
+  color: #00008b;
+}
+
+.card-footer.green {
+  background-color: #c1e1c1;
+  color: #013220;
+}
+.card-footer.orange {
+  background-color: #fac898;
+  color: #ffa500;
 }
