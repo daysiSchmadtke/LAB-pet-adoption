@@ -303,6 +303,27 @@ const pets = [
       "https://creator.nightcafe.studio/jobs/se6OdRLRneeol6qQqUB0/se6OdRLRneeol6qQqUB0--1--lovou.jpg",
   },
 ];
+
+//create
+const form = document.querySelector("form");
+
+const createPetCard = (e) => {
+  e.preventDefault();
+  const newPet = {
+    id: pets.length + 1,
+    name: document.querySelector("#name").value,
+    type: document.querySelector("#type").value,
+    color: document.querySelector("#color").value,
+    specialSkill: document.querySelector("#specialSkill").value,
+    imageUrl: document.querySelector("#image").value,
+    className: document.querySelector("input[name='className']:checked").value,
+  };
+  pets.push(newPet);
+  createCards(pets);
+  form.reset();
+};
+
+form.addEventListener("submit", createPetCard);
 //Select the main div where the cards will display
 const adoptPets = document.querySelector("#adoptPets");
 
@@ -350,10 +371,25 @@ const createCards = (array) => {
       </div>
       <div class="card-footer ${pet.className}">
       <p class="card-text">${pet.type}</p>
+      <button class="btn btn-danger delete-btn" data-id="${pet.id}">Delete</button>
       </div>
       </div>`;
   }
   displayCards("#adoptPets", cardInfo);
+
+  document.querySelectorAll(".delete-btn").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      deletePet(e.target.dataset.id);
+    });
+  });
+};
+
+const deletePet = (id) => {
+  const petIndex = pets.findIndex((pet) => pet.id === parseInt(id));
+  if (petIndex > -1) {
+    pets.splice(petIndex, 1);
+    createCards(pets);
+  }
 };
 
 //Create a function to filter by pet type
