@@ -157,7 +157,7 @@ const pets = [
     type: "dino",
     className: "orange",
     imageUrl:
-      "https://www.dropbox.com/scl/fi/f12hpve32j3f8cwzag6ez/3.png?rlkey=u527wuf86p95ta0z2y789yxvv&st=wjmxq1gg&raw=1",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSKDYiaUXaI07At3fl_xe6eaO79E7skhUAsg&s",
   },
   {
     id: 17,
